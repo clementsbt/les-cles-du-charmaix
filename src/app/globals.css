@@ -19,7 +19,6 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -78,7 +77,6 @@ body {
   background-size: cover;
   background-position: center;
   padding: 80px 20px 40px;
-  scroll-snap-align: start;
 }
 
 .hero-main-title {
@@ -134,7 +132,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scroll-snap-align: start;
 }
 
 .services-cards h2 {
