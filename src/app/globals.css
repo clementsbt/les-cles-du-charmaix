@@ -63,7 +63,9 @@ body {
 
 /* Hero */
 .hero {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -116,6 +118,9 @@ body {
 
 /* Services Cards */
 .services-cards {
+  position: sticky;
+  top: 0;
+  z-index: 5;
   min-height: 100vh;
   padding: 60px 20px;
   background: linear-gradient(to bottom, rgba(255,255,255,0.25), rgba(255,255,255,0.3)),
