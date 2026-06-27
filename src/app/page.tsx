@@ -41,7 +41,7 @@ export default function Home() {
           <div className="hero-content" style={{ opacity: contentOpacity, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexDirection: 'row' }} className="hero-images">
               <Image src="/logo.png" alt="Logo" className="hero-logo" width={140} height={140} style={{ borderRadius: '50%', border: '3px solid white', objectFit: 'cover' }} />
-              <Image src="/lou.jpg" alt="Lou" width={140} height={140} style={{ borderRadius: '50%', border: '3px solid white', objectFit: 'cover' }} />
+              <Image src="/lou.jpg" alt="Lou" width={160} height={160} style={{ borderRadius: '50%', border: '3px solid white', objectFit: 'cover' }} />
             </div>
             <p className="welcome">"Welcome to our village !!!"</p>
             <div className="flags">
