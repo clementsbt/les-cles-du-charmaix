@@ -134,6 +134,16 @@ body {
   font-size: 1.5rem;
 }
 
+/* Mobile: images side by side, text below */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column !important;
+  }
+  .hero-images {
+    flex-direction: row !important;
+  }
+}
+
 /* Services Cards */
 .services-cards {
   position: relative;
