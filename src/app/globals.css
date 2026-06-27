@@ -81,6 +81,8 @@ body {
     background: url('/charmaix-mobile.jpg');
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(3px) brightness(0.7);
+    -webkit-backdrop-filter: blur(3px) brightness(0.7);
   }
 }
 
