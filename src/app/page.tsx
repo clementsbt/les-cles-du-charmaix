@@ -38,8 +38,9 @@ export default function Home() {
           transition: 'opacity 0.1s, transform 0.1s'
         }}>
           <h1 className="hero-main-title">Les Clés du Charmaix</h1>
-          <div className="hero-content" style={{ opacity: contentOpacity }}>
-            <Image src="/logo.png" alt="Logo" className="hero-logo" width={140} height={140} />
+          <div className="hero-content" style={{ opacity: contentOpacity, display: 'flex', alignItems: 'center', gap: '20px' }}>
+            <Image src="/logo.png" alt="Logo" className="hero-logo" width={140} height={140} style={{ borderRadius: '50%', border: '3px solid white', objectFit: 'cover' }} />
+            <Image src="/lou.jpg" alt="Lou" width={140} height={140} style={{ borderRadius: '50%', border: '3px solid white', objectFit: 'cover' }} />
             <p className="welcome">"Welcome to our village !!!"</p>
             <div className="flags">
               <span>🇫🇷</span>
