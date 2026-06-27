@@ -77,10 +77,21 @@ body {
 
 /* Mobile hero background */
 @media (max-width: 768px) {
-  .hero {
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: url('/charmaix-mobile.jpg');
     background-size: cover;
     background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  .hero {
+    background: none;
   }
 }
 

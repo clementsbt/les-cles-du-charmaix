@@ -38,7 +38,7 @@ export default function Home() {
           transition: 'opacity 0.1s, transform 0.1s'
         }}>
           <h1 className="hero-main-title">Les Clés du Charmaix</h1>
-          <div className="hero-content" style={{ opacity: contentOpacity, background: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', borderRadius: '15px', padding: '20px' }}>
+          <div className="hero-content" style={{ opacity: contentOpacity }}>
             <Image src="/logo.png" alt="Logo" className="hero-logo" width={140} height={140} />
             <p className="welcome">"Welcome to our village !!!"</p>
             <div className="flags">
