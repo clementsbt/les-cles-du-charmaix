@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -12,24 +15,44 @@ const services = [
 ];
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const heroOpacity = Math.max(0, 1 - scrollY / 300);
+  const heroTranslate = Math.min(0, -scrollY * 0.5);
+  const contentOpacity = Math.max(0, 1 - scrollY / 200);
+
   return (
     <>
       <Navbar />
       
-      <section className="hero">
-        <h1 className="hero-main-title">Les Clés du Charmaix</h1>
-        <div className="hero-content">
-          <Image src="/logo.png" alt="Logo" className="hero-logo" width={140} height={140} />
-          <p className="welcome">"Welcome to our village !!!"</p>
-          <div className="flags">
-            <span>🇫🇷</span>
-            <span>🇬🇧</span>
-            <span>🇮🇹</span>
+      <section className="hero" style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 10 }}>
+        <div style={{ 
+          opacity: heroOpacity, 
+          transform: `translateY(${heroTranslate}px)`,
+          transition: 'opacity 0.1s, transform 0.1s'
+        }}>
+          <h1 className="hero-main-title">Les Clés du Charmaix</h1>
+          <div className="hero-content" style={{ opacity: contentOpacity }}>
+            <Image src="/logo.png" alt="Logo" className="hero-logo" width={140} height={140} />
+            <p className="welcome">"Welcome to our village !!!"</p>
+            <div className="flags">
+              <span>🇫🇷</span>
+              <span>🇬🇧</span>
+              <span>🇮🇹</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="services-cards" id="services">
+      <div style={{ height: '100vh' }} />
+
+      <section className="services-cards" id="services" style={{ position: 'relative', zIndex: 20 }}>
         <h2>Nos Services</h2>
         <div className="cards-grid">
           {services.map((service, index) => (
