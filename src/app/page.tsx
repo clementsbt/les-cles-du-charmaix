@@ -35,7 +35,12 @@ export default function Home() {
         <div style={{ 
           opacity: heroOpacity, 
           transform: `translateY(${heroTranslate}px)`,
-          transition: 'opacity 0.1s, transform 0.1s'
+          transition: 'opacity 0.1s, transform 0.1s',
+          background: 'rgba(255,255,255,0.15)',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
+          borderRadius: '20px',
+          padding: '30px 20px'
         }}>
           <h1 className="hero-main-title">Les Clés du Charmaix</h1>
           <div className="hero-content" style={{ opacity: contentOpacity }}>
