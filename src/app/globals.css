@@ -88,6 +88,9 @@ body {
 
   .services-cards {
     min-height: 100vh;
+    background: url('/services-bg.jpg');
+    background-size: cover;
+    background-position: center;
   }
 }
 
