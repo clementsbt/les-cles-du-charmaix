@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ height: '20vh' }} />
+
 
       <section className="services-cards" id="services" style={{ position: 'relative', zIndex: 20 }}>
         <h2>Nos Services</h2>
