@@ -26,6 +26,13 @@ body {
   line-height: 1.6;
 }
 
+/* Mobile transparent body */
+@media (max-width: 768px) {
+  body {
+    background: transparent;
+  }
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
