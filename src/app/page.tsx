@@ -26,7 +26,7 @@ export default function Home() {
   const heroOpacity = Math.max(0, 1 - scrollY / 300);
   const heroTranslate = Math.min(0, -scrollY * 0.5);
   const contentOpacity = Math.max(0, 1 - scrollY / 200);
-  const fadeProgress = Math.min(1, scrollY / 300);
+  const fadeProgress = Math.min(1, Math.max(0, (scrollY - 300) / 300));
 
   return (
     <>
