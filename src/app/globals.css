@@ -140,7 +140,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 60px 20px;
-  background: var(--cream);
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
