@@ -153,6 +153,7 @@ body {
               url('/services-bg.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,7 +299,6 @@ footer a {
   .services-cards {
     background-size: 150%;
     background-position: center bottom;
-    background-attachment: fixed;
     padding: 20px 10px;
   }
 
