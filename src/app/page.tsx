@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Navbar />
       
-      <section className="hero" style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 10 }}>
+      <section className="hero" style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 30 }}>
         <div style={{ 
           opacity: heroOpacity, 
           transform: `translateY(${heroTranslate}px)`,
@@ -55,7 +55,7 @@ export default function Home() {
 
 
 
-      <section className="services-cards" id="services" style={{ position: 'relative', zIndex: 20 }}>
+      <section className="services-cards" id="services" style={{ position: 'relative', zIndex: 10 }}>
         <h2>Nos Services</h2>
         <div className="cards-grid">
           {services.map((service, index) => (
