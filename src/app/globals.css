@@ -69,7 +69,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('/village.jpg');
+  background: url('/services-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 80px 20px 40px;
@@ -78,7 +78,7 @@ body {
 /* Mobile hero background */
 @media (max-width: 768px) {
   .hero {
-    background: url('/charmaix-mobile.jpg');
+    background: url('/services-bg.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
