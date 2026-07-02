@@ -76,18 +76,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('/services-bg.jpg');
-  background-size: cover;
-  background-position: center;
+  background: transparent;
   padding: 80px 20px 40px;
 }
 
 /* Mobile hero background */
 @media (max-width: 768px) {
   .hero {
-    background: url('/charmaix-mobile.jpg');
-    background-size: cover;
-    background-position: center;
+    background: transparent;
     min-height: 100vh;
     height: 100vh;
     padding: 100px 20px 40px;
@@ -95,9 +91,7 @@ body {
 
   .services-cards {
     min-height: 100vh;
-    background: url('/services-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background: transparent;
   }
 }
 
@@ -299,7 +293,7 @@ footer a {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .services-cards {
-    background: url('/services-bg.jpg');
+    background: transparent;
     background-size: 150%;
     background-position: center bottom;
     padding: 20px 10px;

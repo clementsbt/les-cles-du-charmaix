@@ -26,11 +26,46 @@ export default function Home() {
   const heroOpacity = Math.max(0, 1 - scrollY / 300);
   const heroTranslate = Math.min(0, -scrollY * 0.5);
   const contentOpacity = Math.max(0, 1 - scrollY / 200);
+  const fadeProgress = Math.min(1, scrollY / 300);
 
   return (
     <>
       <Navbar />
       
+      {/* Background transition overlay */}
+      <div 
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'url("/charmaix-mobile.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          zIndex: -1,
+          transition: 'opacity 0.1s ease-out',
+          opacity: 1 - fadeProgress
+        }}
+        className="hero-bg"
+      />
+      <div 
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'url("/services-bg.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          zIndex: -2,
+          transition: 'opacity 0.1s ease-out',
+          opacity: fadeProgress
+        }}
+        className="services-bg"
+      />
+
       <section className="hero">
         <div style={{ 
           opacity: heroOpacity, 
