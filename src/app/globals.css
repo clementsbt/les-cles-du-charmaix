@@ -81,8 +81,8 @@ body {
     background: url('/charmaix-mobile.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 100dvh;
+    height: 100dvh;
   }
 }
 
