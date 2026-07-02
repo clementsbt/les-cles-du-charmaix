@@ -140,10 +140,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 60px 20px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.25), rgba(255,255,255,0.3)),
-              url('/services-bg.jpg');
-  background-size: cover;
-  background-position: center;
+  background: var(--cream);
   display: flex;
   flex-direction: column;
   justify-content: center;
