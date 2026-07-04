@@ -129,7 +129,7 @@ body {
   right: 0;
   bottom: 0;
   background: url('/charmaix-mobile.jpg') center/cover no-repeat;
-  filter: blur(8px);
+  filter: blur(3px);
   transform: scale(1.1);
   z-index: -3;
 }
