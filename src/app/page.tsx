@@ -46,7 +46,7 @@ export default function Home() {
           zIndex: -1,
           transition: 'opacity 0.1s ease-out',
           opacity: 1 - fadeProgress,
-          filter: 'blur(3px)',
+          filter: 'blur(1px)',
           transform: 'scale(1.1)'
         }}
         className="hero-bg"
