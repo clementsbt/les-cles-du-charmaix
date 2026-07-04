@@ -51,22 +51,7 @@ export default function Home() {
         }}
         className="hero-bg"
       />
-      <div 
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'url("/services-bg.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: -2,
-          transition: 'opacity 0.1s ease-out',
-          opacity: fadeProgress
-        }}
-        className="services-bg"
-      />
+
 
       <section className="hero">
         <div style={{ 
