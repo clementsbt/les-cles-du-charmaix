@@ -17,6 +17,17 @@
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Scroll snap for sticky sections */
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.hero, .services-cards {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 body {
