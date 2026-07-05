@@ -116,7 +116,7 @@ body {
 
   .services-cards {
     min-height: 100vh;
-    background: transparent;
+    background: #000;
   }
 }
 
@@ -199,7 +199,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 60px 20px;
-  background: transparent;
+  background: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
