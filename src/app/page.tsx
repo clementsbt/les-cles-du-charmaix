@@ -77,7 +77,7 @@ export default function Home() {
                 if (!target) return;
                 const start = window.scrollY;
                 const targetY = target.getBoundingClientRect().top + start;
-                const duration = 5000;
+                const duration = 10000;
                 const startTime = performance.now();
                 
                 const animate = (currentTime: number) => {
