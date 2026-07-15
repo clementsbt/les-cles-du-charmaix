@@ -71,6 +71,13 @@ export default function Home() {
               <span>🇬🇧</span>
               <span>🇮🇹</span>
             </div>
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="cta-button"
+            >
+              En savoir plus
+              <span className="arrow">↓</span>
+            </button>
           </div>
         </div>
       </section>
