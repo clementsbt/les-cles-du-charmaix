@@ -72,7 +72,23 @@ export default function Home() {
               <span>🇮🇹</span>
             </div>
             <button 
-              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                const target = document.getElementById('services');
+                if (!target) return;
+                const start = window.scrollY;
+                const targetY = target.getBoundingClientRect().top + start;
+                const duration = 1500;
+                const startTime = performance.now();
+                
+                const animate = (currentTime: number) => {
+                  const elapsed = currentTime - startTime;
+                  const progress = Math.min(elapsed / duration, 1);
+                  const ease = 1 - Math.pow(1 - progress, 3);
+                  window.scrollTo(0, start + (targetY - start) * ease);
+                  if (progress < 1) requestAnimationFrame(animate);
+                };
+                requestAnimationFrame(animate);
+              }}
               className="cta-button"
             >
               En savoir plus
