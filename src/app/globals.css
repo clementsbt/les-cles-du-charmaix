@@ -258,7 +258,7 @@ body {
   filter: blur(10px);
   transform: scale(1.1);
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .services-cards > * {
