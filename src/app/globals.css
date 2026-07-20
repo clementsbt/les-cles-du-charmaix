@@ -31,6 +31,10 @@ html.home-page .services-cards {
   scroll-snap-stop: always;
 }
 
+html.home-page footer {
+  scroll-snap-align: end;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: var(--cream);
