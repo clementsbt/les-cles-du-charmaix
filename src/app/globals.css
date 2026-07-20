@@ -436,7 +436,7 @@ footer a {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .services-cards {
-    background: var(--blue);
+    background: url('/services-bg.jpg') center/cover no-repeat;
     background-size: 150%;
     background-position: center bottom;
     padding: 20px 10px;
