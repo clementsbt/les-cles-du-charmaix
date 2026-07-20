@@ -20,12 +20,13 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Scroll snap for sticky sections */
-html {
+/* Scroll snap for sticky sections - only on home page */
+html.home-page {
   scroll-snap-type: y mandatory;
 }
 
-.hero, .services-cards {
+html.home-page .hero,
+html.home-page .services-cards {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -79,7 +80,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Hero */
+/* Hero - only for home page */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -90,6 +91,25 @@ body {
   justify-content: center;
   background: transparent;
   padding: 80px 20px 20px;
+}
+
+/* Page hero (non-home pages) */
+.page-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  padding: 100px 20px 40px;
+  color: var(--white);
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .hero > div {

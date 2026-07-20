@@ -18,9 +18,15 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
+    // Add home-page class for scroll snap
+    document.documentElement.classList.add('home-page');
+    
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      document.documentElement.classList.remove('home-page');
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const heroOpacity = Math.max(0, 1 - scrollY / 300);

@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <section className="hero">
+      <section className="page-hero">
         <h1>📞 Contact</h1>
       </section>
       <section className="content">

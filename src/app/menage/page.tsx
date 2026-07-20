@@ -5,7 +5,7 @@ export default function Menage() {
   return (
     <>
       <Navbar />
-      <section className="hero">
+      <section className="page-hero">
         <h1>🧹 Ménage</h1>
       </section>
       <section className="content">
