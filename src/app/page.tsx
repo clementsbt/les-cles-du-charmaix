@@ -121,7 +121,7 @@ export default function Home() {
         <div className="contact-grid">
           <Link href="mailto:lesclesducharmaix@gmail.com">📧 lesclesducharmaix@gmail.com</Link>
           <span>📍 735 rue du Cheval, 73500 Valfréjus</span>
-          <Link href="tel:+33787317301">📞 07 87 31 73 01</Link>
+          <Link href="tel:+33781462132">📞 07 81 46 21 32</Link>
         </div>
       </section>
 
