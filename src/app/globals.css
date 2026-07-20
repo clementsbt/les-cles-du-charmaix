@@ -128,7 +128,7 @@ body {
 /* Mobile hero background */
 @media (max-width: 768px) {
   .hero {
-    background: transparent;
+    background: url('/charmaix-mobile.jpg') center/cover no-repeat;
     min-height: 100vh;
     height: 100vh;
     padding: 80px 20px 20px;
@@ -436,7 +436,7 @@ footer a {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .services-cards {
-    background: transparent;
+    background: var(--blue);
     background-size: 150%;
     background-position: center bottom;
     padding: 20px 10px;
