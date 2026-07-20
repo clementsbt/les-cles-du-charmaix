@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Cles() {
   return (
@@ -10,6 +11,14 @@ export default function Cles() {
       </section>
       <section className="content">
         <h2>Gestion des clés</h2>
+        <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '30px' }}>
+          <Image
+            src="/cles-main.jpg"
+            alt="Remise des clés"
+            fill
+            style={{ objectFit: 'cover', borderRadius: '12px' }}
+          />
+        </div>
         <p>Service d'accueil des voyageurs et remise des clés lors des arrivées et départs.</p>
         <p>Nous assurons une arrivée fluide et professionnelle pour vos locataires.</p>
         <p>Services inclus :</p>
