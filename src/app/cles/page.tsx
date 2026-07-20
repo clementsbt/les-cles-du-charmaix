@@ -7,11 +7,7 @@ export default function Cles() {
     <>
       <Navbar />
       <section className="page-hero">
-        <h1>🔑 Gestion des clés</h1>
-      </section>
-      <section className="content">
-        <h2>Gestion des clés</h2>
-        <div style={{ position: 'relative', width: '100%', height: '300px', marginBottom: '30px' }}>
+        <div style={{ position: 'relative', width: '50%', height: '250px', marginBottom: '20px' }}>
           <Image
             src="/cles-main.jpg"
             alt="Remise des clés"
@@ -19,6 +15,10 @@ export default function Cles() {
             style={{ objectFit: 'cover', borderRadius: '12px' }}
           />
         </div>
+        <h1>🔑 Gestion des clés</h1>
+      </section>
+      <section className="content">
+        <h2>Gestion des clés</h2>
         <p>Service d'accueil des voyageurs et remise des clés lors des arrivées et départs.</p>
         <p>Nous assurons une arrivée fluide et professionnelle pour vos locataires.</p>
         <p>Services inclus :</p>
