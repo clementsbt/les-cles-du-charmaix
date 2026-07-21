@@ -432,10 +432,12 @@ footer {
 .cles-layout {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 25px;
 }
 
 .cles-card {
+  width: 100%;
   background: white;
   border-radius: 16px;
   padding: 25px;
@@ -460,7 +462,8 @@ footer {
 }
 
 .cles-image-card {
-  width: 100%;
+  width: 33.333%;
+  max-width: 400px;
   height: 280px;
   border-radius: 16px;
   overflow: hidden;
@@ -468,7 +471,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .cles-layout {
+    align-items: stretch;
+  }
+  
   .cles-image-card {
+    width: 100%;
+    max-width: none;
     height: 220px;
   }
 }
