@@ -14,6 +14,17 @@ export default function Cles() {
       {/* Contenu avec cartes */}
       <section className="content">
         <div className="cles-layout">
+          {/* Carte image */}
+          <div className="cles-image-card">
+            <div style={{ position: 'relative', width: '100%', height: '100%', minHeight: '260px' }}>
+              <Image
+                src="/cles-main.jpg"
+                alt="Remise des clés"
+                fill
+                style={{ objectFit: 'cover', borderRadius: '16px' }}
+              />
+            </div>
+          </div>
           {/* Carte texte */}
           <div className="cles-card">
             <h2>Gestion des clés</h2>
@@ -27,17 +38,6 @@ export default function Cles() {
               <li>État des lieux de sortie</li>
               <li>Remise des clés au départ</li>
             </ul>
-          </div>
-          {/* Carte image */}
-          <div className="cles-image-card">
-            <div style={{ position: 'relative', width: '100%', height: '100%', minHeight: '260px' }}>
-              <Image
-                src="/cles-main.jpg"
-                alt="Remise des clés"
-                fill
-                style={{ objectFit: 'cover', borderRadius: '16px' }}
-              />
-            </div>
           </div>
         </div>
         <Link href="/" className="back-link">← Retour au site</Link>
