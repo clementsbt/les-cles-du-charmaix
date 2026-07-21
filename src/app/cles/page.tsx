@@ -18,17 +18,31 @@ export default function Cles() {
         <h1>🔑 Gestion des clés</h1>
       </section>
       <section className="content">
-        <h2>Gestion des clés</h2>
-        <p>Service d'accueil des voyageurs et remise des clés lors des arrivées et départs.</p>
-        <p>Nous assurons une arrivée fluide et professionnelle pour vos locataires.</p>
-        <p>Services inclus :</p>
-        <ul>
-          <li>Remise des clés en main propre</li>
-          <li>État des lieux d'entrée</li>
-          <li>Présentation du logement</li>
-          <li>État des lieux de sortie</li>
-          <li>Remise des clés au départ</li>
-        </ul>
+        <div className="cles-layout">
+          <div className="cles-text">
+            <h2>Gestion des clés</h2>
+            <p>Service d'accueil des voyageurs et remise des clés lors des arrivées et départs.</p>
+            <p>Nous assurons une arrivée fluide et professionnelle pour vos locataires.</p>
+            <p>Services inclus :</p>
+            <ul>
+              <li>Remise des clés en main propre</li>
+              <li>État des lieux d'entrée</li>
+              <li>Présentation du logement</li>
+              <li>État des lieux de sortie</li>
+              <li>Remise des clés au départ</li>
+            </ul>
+          </div>
+          <div className="cles-image-card">
+            <div style={{ position: 'relative', width: '100%', height: '100%', minHeight: '280px' }}>
+              <Image
+                src="/cles-main.jpg"
+                alt="Remise des clés"
+                fill
+                style={{ objectFit: 'cover', borderRadius: '12px' }}
+              />
+            </div>
+          </div>
+        </div>
         <Link href="/" className="back-link">← Retour au site</Link>
       </section>
       <section className="contact">
