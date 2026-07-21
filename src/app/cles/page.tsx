@@ -1,32 +1,15 @@
+import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Cles() {
   return (
     <>
-      {/* Header bleu marine */}
-      <header className="cles-header">
-        <div className="cles-header-top">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={40}
-              height={40}
-              style={{ borderRadius: '50%', border: '2px solid white', objectFit: 'cover' }}
-            />
-            <span style={{ color: 'white', fontWeight: 600, fontSize: '1rem' }}>Les Clés du Charmaix</span>
-          </div>
-          <a href="tel:+33781462132" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'white', textDecoration: 'none', fontSize: '0.95rem' }}>
-            <span>📞</span>
-            <span>07 81 46 21 32</span>
-          </a>
-        </div>
-        <div className="cles-header-title">
-          <span style={{ fontSize: '2.5rem' }}>🔑</span>
-          <h1>Gestion des clés</h1>
-        </div>
-      </header>
+      <Navbar />
+      <section className="page-hero">
+        <span style={{ fontSize: '3rem', marginBottom: '10px' }}>🔑</span>
+        <h1>Gestion des clés</h1>
+      </section>
 
       {/* Contenu avec image à droite */}
       <section className="content">
