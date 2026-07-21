@@ -14,7 +14,7 @@ export default function Cles() {
       {/* Contenu avec cartes */}
       <section className="content">
         <div className="cles-layout">
-          {/* Carte texte à gauche */}
+          {/* Carte texte */}
           <div className="cles-card">
             <h2>Gestion des clés</h2>
             <p>Service d'accueil des voyageurs et remise des clés lors des arrivées et départs.</p>
@@ -28,7 +28,7 @@ export default function Cles() {
               <li>Remise des clés au départ</li>
             </ul>
           </div>
-          {/* Carte image à droite */}
+          {/* Carte image */}
           <div className="cles-image-card">
             <div style={{ position: 'relative', width: '100%', height: '100%', minHeight: '260px' }}>
               <Image
