@@ -428,15 +428,36 @@ footer {
   background: var(--blue-light);
 }
 
-/* Layout clés avec image à droite */
+/* Layout clés avec cartes */
 .cles-layout {
   display: flex;
   gap: 30px;
   align-items: flex-start;
 }
 
-.cles-text {
+.cles-card {
   flex: 1;
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cles-card h2 {
+  color: var(--blue);
+  margin-bottom: 15px;
+}
+
+.cles-card p {
+  margin-bottom: 12px;
+}
+
+.cles-card ul {
+  margin-left: 20px;
+}
+
+.cles-card li {
+  margin-bottom: 6px;
 }
 
 .cles-image-card {
@@ -455,6 +476,10 @@ footer {
     flex: 0 0 auto;
     width: 100%;
     height: 220px;
+  }
+  
+  .cles-card {
+    order: 2;
   }
 }
 
