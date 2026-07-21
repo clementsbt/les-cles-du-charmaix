@@ -431,12 +431,11 @@ footer {
 /* Layout clés avec cartes */
 .cles-layout {
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .cles-card {
-  flex: 1;
   background: white;
   border-radius: 16px;
   padding: 25px;
@@ -461,25 +460,16 @@ footer {
 }
 
 .cles-image-card {
-  flex: 0 0 320px;
+  width: 100%;
+  height: 280px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
-  .cles-layout {
-    flex-direction: column;
-  }
-  
   .cles-image-card {
-    flex: 0 0 auto;
-    width: 100%;
     height: 220px;
-  }
-  
-  .cles-card {
-    order: 2;
   }
 }
 
