@@ -428,6 +428,57 @@ footer {
   background: var(--blue-light);
 }
 
+/* Header clés */
+.cles-header {
+  background: var(--blue);
+  padding: 20px;
+  padding-top: 80px;
+}
+
+.cles-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.cles-header-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cles-header-title h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cles-header {
+    padding: 15px;
+    padding-top: 70px;
+  }
+  
+  .cles-header-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .cles-header-title h1 {
+    font-size: 1.6rem;
+  }
+  
+  .cles-header-title span:first-child {
+    font-size: 1.8rem;
+  }
+}
+
 /* Layout clés avec image à droite */
 .cles-layout {
   display: flex;
@@ -440,8 +491,8 @@ footer {
 }
 
 .cles-image-card {
-  flex: 0 0 300px;
-  border-radius: 12px;
+  flex: 0 0 320px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -454,7 +505,7 @@ footer {
   .cles-image-card {
     flex: 0 0 auto;
     width: 100%;
-    height: 250px;
+    height: 220px;
   }
 }
 
