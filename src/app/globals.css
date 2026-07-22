@@ -434,30 +434,23 @@ footer {
 }
 
 .cles-image-card {
-  display: none;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  margin: 0 auto 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 @media (min-width: 769px) {
-  .cles-image-card {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 30%;
-    width: 50%;
-    max-width: 600px;
-    height: 320px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    z-index: 10;
-  }
-  
   .page-hero {
-    min-height: 28vh;
+    min-height: 20vh;
   }
   
   .content {
-    padding-top: 280px;
+    padding-top: 0;
   }
 }
 
@@ -485,18 +478,6 @@ footer {
 
 .cles-card li {
   margin-bottom: 6px;
-}
-
-@media (max-width: 768px) {
-  .cles-image-card {
-    display: block;
-    width: 100%;
-    height: 220px;
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
 }
 
 footer a {

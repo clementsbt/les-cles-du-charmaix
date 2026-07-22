@@ -11,16 +11,6 @@ export default function Cles() {
         <h1>Gestion des clés</h1>
       </section>
 
-      {/* Image à cheval sur header et contenu */}
-      <div className="cles-image-card">
-        <Image
-          src="/cles-main.jpg"
-          alt="Remise des clés"
-          fill
-          style={{ objectFit: 'cover', borderRadius: '16px' }}
-        />
-      </div>
-
       {/* Contenu */}
       <section className="content">
         <div className="cles-card">
@@ -38,6 +28,16 @@ export default function Cles() {
         </div>
         <Link href="/" className="back-link">← Retour au site</Link>
       </section>
+
+      {/* Image */}
+      <div className="cles-image-card">
+        <Image
+          src="/cles-main.jpg"
+          alt="Remise des clés"
+          fill
+          style={{ objectFit: 'cover', borderRadius: '16px' }}
+        />
+      </div>
 
       {/* Contact */}
       <section className="contact">
